@@ -2,128 +2,129 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>7SQUARE-PIZZA-CAFE</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>7SQUARE-PIZZA-CAFE</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <footer rel="stylesheet" href="css/style.css">
 </head>
 
+
 <body>
-    <div class="tumaa">
-        <div class="topnav fixed-top" id="myTopnav">
-            <a href="#order" >Order</a>
-            <a href="#" class="btn">images</a>
-            <a href="#contact" class="btn">Contact</a>
-            <a href="#Home" class="active btn">Home</a>
-            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-            <img src="https://media-cdn.tripadvisor.com/media/photo-s/0e/ad/7f/20/borgata-pizza-cafe.jpg" alt="logo"
-                style="width:45px; height: 50px; border-radius: 55%; float: left;">
-        </div>
-        <div class="tum" id="Home">
-            <h2> WELCOME TO 7SQUARE-PIZZA-CAFE</h2>
-            <P> we're cooking what you're craving </P>
-        </div>
+  <div class="tumaa">
+    <div class="topnav fixed-top" id="myTopnav">
+      <a href="#order">Order</a>
+      <a href="#" class="btn">images</a>
+      <a href="#contact" class="btn">Contact</a>
+      <a href="#Home" class="active btn">Home</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      <img src="https://media-cdn.tripadvisor.com/media/photo-s/0e/ad/7f/20/borgata-pizza-cafe.jpg" alt="logo"
+        style="width:45px; height: 50px; border-radius: 55%; float: left;">
     </div>
 
-     <div class="sect-3" id="order">
+    <div class="tum" id="Home">
+      <h2> WELCOME TO 7SQUARE-PIZZA-CAFE</h2>
+      <P> we're cooking what you're craving </P>
+    </div>
+  </div>
+
+
+  <div class="sect-3" id="order">
+    <hr>
+    <form>
+      <label>Pizza Size:</label>
+      <select class="form-control" id="size">
+        <option>SELECT PIZZA SIZE </option><br>
+        <option value="Large">LARGE KSH 600</option>
+        <option value="Medium">MEDIUM KSH 500</option>
+        <option value="Small">SMALL KSH 300 </option>
+      </select><br><br><br><br>
+
+      <label>Pizza Crust:</label>
+      <select class="form-control" id="crust">
+        <option>SELECT PIZZA CRUST </option><br>
+        <option value="Crispy">CRISPY </option>
+        <option value="Stuffed">STUFFED </option>
+        <option value="Glutten-free">GLUTEN FREE </option>
+      </select><br><br><br>
+
+      <label>Meaty Pizza Topping;</label>
+      <select class="form-control" id="meaty">
+        <option>SELECT PIZZA MEATY TOPPING </option><br>
+        <option value="Peperonni">PEPERONNI </option>
+        <option value="Sausage">SAUSAGE </option>
+        <option value="Chicken">CHICKEN </option>
+      </select><br><br><br>
+
+      <label>Veggy Pizza Topping;</label>
+      <select class="form-control" id="veggy">
+        <option>SELECT PIZZA VEGGY TOPPING </option><br>
+        <option value="Onion">ONION </option>
+        <option value="Spinach">SPINACH </option>
+        <option value="Pineapple">PINEAPPLE </option>
+      </select>
+      <input type="submit" class="btn btn-warning btn-rounded waves-effect btn-lg" id="totalCost" value="Check Out!!!">
+    </form>
+
+    <div class="sect-4" id="textPrice">
+      <div class="pick">
+        <p style="text-align: center;">PLEASE CONFIRM YOUR ORDER</p>
         <hr>
-        <form>
-            <label>Pizza Size:</label>
-            <select class="form-control" id="size">
-                <option>SELECT PIZZA SIZE </option><br>
-                <option value="Large">LARGE KSH 600</option>
-                <option value="Medium">MEDIUM KSH 500</option>
-                <option value="Small">SMALL KSH 300 </option>
-            </select><br><br><br><br>
+        <p id="pz">Pizza Size</p>
+        <p id="cr">Crust</p>
+        <p id="mt">Meat Topping</p>
+        <p id="vt">Vegetable Topping</p>
+        <P id="tc">Total Cost</P>
+      </div>
+    </div>
 
-            <label>Pizza Crust:</label>
-            <select class="form-control" id="crust">
-                <option>SELECT PIZZA CRUST </option><br>
-                <option value="Crispy">CRISPY </option>
-                <option value="Stuffed">STUFFED </option>
-                <option value="Glutten-free">GLUTEN FREE </option>
-            </select><br><br><br>
+    <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h4>Fill in delivery detail</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
 
-            <label>Meaty Pizza Topping;</label>
-            <select class="form-control" id="meaty">
-                <option>SELECT PIZZA MEATY TOPPING </option><br>
-                <option value="Peperonni">PEPERONNI </option>
-                <option value="Sausage">SAUSAGE </option>
-                <option value="Chicken">CHICKEN </option>
-            </select><br><br><br>
-
-            <label>Veggy Pizza Topping;</label>
-            <select class="form-control" id="veggy">
-                <option>SELECT PIZZA VEGGY TOPPING </option><br>
-                <option value="Onion">ONION </option>
-                <option value="Spinach">SPINACH </option>
-                <option value="Pineapple">PINEAPPLE </option>
-            </select>
-            <input type="submit" class="btn btn-warning btn-rounded waves-effect btn-lg" id="totalCost"
-                value="Check Out!!!">
-        </form>
-
-        <div class="sect-4" id="textPrice">
-            <div class="pick">
-                    <p style="text-align: center;">PLEASE CONFIRM YOUR ORDER</p>
-                    <hr>
-                    <p id="pz">Pizza Size</p>
-                    <p id="cr">Crust</p>
-                    <p id="mt">Meat Topping</p>
-                    <p id="vt">Vegetable Topping</p>
-                    <P id="tc">Total Cost</P>
+          <div class="modal-body mx-3">
+            <div class="md-form mb-5">
+              <input type="text" id="name" placeholder='Your name' required>
             </div>
-        </div>
-        <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header text-center">
-              <h4>Fill in delivery detail</h4>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+            <div class="md-form mb-5">
+              <input type='text' id="lpocation" placeholder="Your Location" required>
             </div>
-            <div class="modal-body mx-3">
-              <div class="md-form mb-5">
-                <input type="text" id="name" placeholder='Your name' required>
-              </div>
-              <div class="md-form mb-5">
-                <input type='text' id="lpocation" placeholder="Your Location" required>
-              </div>
-      
-              <div class="md-form mb-4">
-                <input type="number" id="address" placeholder="Your Address" required>
-              </div>
-      
+            <div class="md-form mb-4">
+              <input type="number" id="address" placeholder="Your Address" required>
             </div>
-            <div class="modal-footer d-flex justify-content-center">
-              <button id="delivery" onclick="validate()" class="btn btn-deep-orange">Send</button>
-            </div>
+          </div>
+          <div class="modal-footer d-flex justify-content-center">
+            <button id="delivery" onclick="validate()" class="btn btn-deep-orange">Send</button>
           </div>
         </div>
       </div>
-      
-      <div class="text-center">
-        <a href="" id="mode" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalRegisterForm">Delivery</a>
-      </div>      
+    </div>
 
+    <div class="text-center">
+      <a href="" id="mode" class="btn btn-default btn-rounded mb-4" data-toggle="modal"
+        data-target="#modalRegisterForm">Delivery</a>
+    </div>
 
+    <div id="contact">
+      <hr>
+      <div class="contact">
+        <span>Tel<small>: 07001001000</small></span> <br>
+        <span>G-Mail<small>: squarepizza@GMAIL.COM</small></span>
+      </div>
+    </div>
 
-        <div id="contact">
-            <hr>
-            <div class="contact">
-                    <span>Tel<small>: 07001001000</small></span> <br>
-                    <span>G-Mail<small>: squarepizza@GMAIL.COM</small></span>
+    <footer>
+      <h1>Pizza is awesome while its hot!</h1>
+    </footer>
 
-            </div>
-       </div>
-<footer>
-    <h1>Pizza is awesome while its hot!</h1>
-</footer> 
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
