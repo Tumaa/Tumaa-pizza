@@ -77,28 +77,28 @@ order.prototype.totalCost = function(){
     return orderTotal;
 }
 
-// $(document).ready(function () {
-//     $("input#totalCost").click(function (event) { 
-//         event.preventDefault();
-//         var sizes = $("select#size").val();
-//         var crusts = $("select#crust").val();
-//         var meatyToppings = $("select#meaty").val();
-//         var veggyToppings = $("select#veggy").val();
+$(document).ready(function () {
+    $("input#totalCost").click(function (event) { 
+        event.preventDefault();
+        var sizes = $("select#size").val();
+        var crusts = $("select#crust").val();
+        var meatyToppings = $("select#meaty").val();
+        var veggyToppings = $("select#veggy").val();
 
-//         var newPizzaOrder = new order(sizes, crusts, meatyToppings, veggyToppings);
-//         newPizzaOrder.cost();
-//         totalCosts.push(newPizzaOrder.price);
+        var newPizzaOrder = new order(sizes, crusts, meatyToppings, veggyToppings);
+        newPizzaOrder.cost();
+        totalCosts.push(newPizzaOrder.price);
 
-//         $("#pz").text(sizes);
-//         $("#cr").text(crusts);
-//         $("#mt").text(meatyToppings);
-//         $("#vt").text(veggyToppings);
-//         $("#tc").text(newPizzaOrder.totalCost());
+        $("#pz").text(sizes);
+        $("#cr").text(crusts);
+        $("#mt").text(meatyToppings);
+        $("#vt").text(veggyToppings);
+        $("#tc").text(newPizzaOrder.totalCost());
 
         
-//     }); 
+    }); 
 
-// });
+});
 
 // $(document).ready(function () {
 //     $("#delivery").click(function () { 
