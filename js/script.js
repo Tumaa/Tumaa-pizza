@@ -1,17 +1,17 @@
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
-      x.className += " responsive";
+        x.className += " responsive";
     } else {
-      x.className = "topnav";
+        x.className = "topnav";
     }
-  }
+}
 
 
 
 var totalCosts = [];
 
-function order(size, crust, meatyTopping, veggyTopping ){
+function order(size, crust, meatyTopping, veggyTopping) {
     this.size = size;
     this.crust = crust;
     this.meatyTopping = meatyTopping;
@@ -24,61 +24,61 @@ var pizzaCrust = ["Crispy", "Stuffed", "Gluten-free"];
 var pizzaMeatyTopping = ["Peperonni", "Sausage", "Chicken",];
 var pizzaveggyTopping = ["Onion", "Pineapple", "Spinach",];
 
-order.prototype.cost = function(){
-    if (this.size === pizzaSize[0]){
+order.prototype.cost = function () {
+    if (this.size === pizzaSize[0]) {
         this.price += 300;
     }
-    else if (this.size === pizzaSize[1]){
+    else if (this.size === pizzaSize[1]) {
         this.price += 500;
     }
-    else if (this.size === pizzaSize[2]){
+    else if (this.size === pizzaSize[2]) {
         this.price += 600;
     }
 
-    if (this.crust === pizzaCrust[0]){
+    if (this.crust === pizzaCrust[0]) {
         this.price += 100;
     }
-    else if (this.crust === pizzaCrust[1]){
+    else if (this.crust === pizzaCrust[1]) {
         this.price += 130;
     }
-    else if (this.crust === pizzaCrust[2]){
+    else if (this.crust === pizzaCrust[2]) {
         this.price += 150;
     }
 
-    if (this.meatyTopping === pizzaMeatyTopping[0]){
+    if (this.meatyTopping === pizzaMeatyTopping[0]) {
         this.price += 100;
     }
-    else if (this.meatyTopping === pizzaMeatyTopping[1]){
+    else if (this.meatyTopping === pizzaMeatyTopping[1]) {
         this.price += 100;
     }
-    else if (this.meatyTopping === pizzaMeatyTopping[2]){
+    else if (this.meatyTopping === pizzaMeatyTopping[2]) {
         this.price += 100;
     }
 
 
-    if (this.veggyTopping === pizzaveggyTopping[0]){
+    if (this.veggyTopping === pizzaveggyTopping[0]) {
         this.price += 100;
     }
-    else if (this.veggyTopping === pizzaveggyTopping[1]){
+    else if (this.veggyTopping === pizzaveggyTopping[1]) {
         this.price += 100;
     }
-    else if (this.veggyTopping === pizzaveggyTopping[2]){
+    else if (this.veggyTopping === pizzaveggyTopping[2]) {
         this.price += 100;
     }
 
     return this.price;
 
 }
-order.prototype.totalCost = function(){
+order.prototype.totalCost = function () {
     var orderTotal = 0;
-    for(var order =0; order < totalCosts.length; order++){
+    for (var order = 0; order < totalCosts.length; order++) {
         orderTotal += totalCosts[order];
     }
     return orderTotal;
 }
 
 $(document).ready(function () {
-    $("input#totalCost").click(function (event) { 
+    $("input#totalCost").click(function (event) {
         event.preventDefault();
         var sizes = $("select#size").val();
         var crusts = $("select#crust").val();
@@ -95,15 +95,15 @@ $(document).ready(function () {
         $("#vt").text(veggyToppings);
         $("#tc").text(newPizzaOrder.totalCost());
 
-        
-    }); 
+
+    });
 
 });
 
 $(document).ready(function () {
-    $("#delivery").click(function () { 
+    $("#delivery").click(function () {
         alert("Your charges for delivery is ksh150")
-        alert("Thank you for Your Purchase!Your order will be delivered to your location")        
+        alert("Thank you for Your Purchase!Your order will be delivered to your location")
     });
 });
 
@@ -112,9 +112,9 @@ $(document).ready(function () {
 var header = document.getElementById("myTopnav");
 var btns = header.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-  var current = document.getElementsByClassName("active");
-  current[0].className = current[0].className.replace(" active", "");
-  this.className += " active";
-  });
+    btns[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+    });
 }

@@ -1,8 +1,12 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+=======
+ @import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+>>>>>>> 2ef9fdce0d8a1d464115d212d29a18f79f090172
 
 body {margin:0;
 font-family: 'Courgette', cursive;
-}
+}  
 .container{
   width: 100%;
 }
