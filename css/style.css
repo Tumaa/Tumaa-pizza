@@ -108,7 +108,7 @@ p{
 }
 
 
-/* .sect-4{
+.sect-4{
   background-color: pink; 
   font-family: 'Courgette', cursive;
 
@@ -118,7 +118,7 @@ p{
   margin: 3%;
   text-align: center;
 }
-footer{
+/* footer{
   padding-bottom: 3%;
   text-align: center;
 }
@@ -130,9 +130,9 @@ footer{
   color: black;
 }
 #totalCost{
-  width: 50%;
+  width: 50%; */
 }
-form{
+/* form{
   padding-bottom: 5%;
 }
 .h2{
