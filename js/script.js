@@ -100,21 +100,21 @@ $(document).ready(function () {
 
 });
 
-// $(document).ready(function () {
-//     $("#delivery").click(function () { 
-//         alert("Your charges for delivery is ksh150")
-//         alert("Thank you for Your Purchase!Your order will be delivered to your location")        
-//     });
-// });
+$(document).ready(function () {
+    $("#delivery").click(function () { 
+        alert("Your charges for delivery is ksh150")
+        alert("Thank you for Your Purchase!Your order will be delivered to your location")        
+    });
+});
 
 
 
-// var header = document.getElementById("myTopnav");
-// var btns = header.getElementsByClassName("btn");
-// for (var i = 0; i < btns.length; i++) {
-//   btns[i].addEventListener("click", function() {
-//   var current = document.getElementsByClassName("active");
-//   current[0].className = current[0].className.replace(" active", "");
-//   this.className += " active";
-//   });
-// }
+var header = document.getElementById("myTopnav");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
