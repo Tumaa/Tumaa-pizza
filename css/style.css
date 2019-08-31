@@ -118,7 +118,7 @@ p{
   margin: 3%;
   text-align: center;
 }
-/* footer{
+footer{
   padding-bottom: 3%;
   text-align: center;
 }
@@ -130,7 +130,7 @@ p{
   color: black;
 }
 #totalCost{
-  width: 50%; */
+  width: 50%;
 }
 /* form{
   padding-bottom: 5%;
