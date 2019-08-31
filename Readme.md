@@ -26,7 +26,7 @@ This a web application where customers order different sizes of pizzas with one 
 Contact me at ramanfatuu@gmail.com if you run into any issue or have any questions
 
 ## Live Demo
-You can view live demo of my 7square-pizza:
+You can view live demo of my 7square-pizza:https://tumaa.github.io/Tumaa-pizza/
 
 ### License
 Permission is hereby granted, free of charge, to any person obtaining a copy
